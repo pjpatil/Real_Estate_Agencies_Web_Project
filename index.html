@@ -4,102 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Property Listing Website</title>
+    <title>Real Estate Website</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-
-        <!-- Header -->
-        <header>
+    <header>
+        <div class="container1">
             <div class="logo">
-                <img src="PICS/Logo_png-removebg.png" alt="">
+               <img src="PICS/RE_Logo00.png" alt="">
             </div>
-
-            <!-- Navigation bar -->
+            
             <nav>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Buy</a></li>
-                        <li><a href="#">Rent</a></li>
-                        <li><a href="#">Properties</a></li>
-                        <li><a href="#">Agents</a></li>
-
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </div>
+                <!-- <marquee behavior="lang" direction="">asdfghjklqwertyuio</marquee> -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
-
-            <!-- Search bar -->
-            <div class="search-bar">
-                <form action="#" method="GET">
-                    <input type="text" name="search" placeholder="Search properties...">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-
-        </header>
-
-        <!-- Slider -->
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="PICS/slider3.jpg" alt="Slide 1"></div>
-                <div class="slide"><img src="PICS/slider9.jpg" alt="Slide 2"></div>
-                <div class="slide"><img src="PICS/slider13.jpg" alt="Slide 3"></div>
-                <div class="slide"><img src="PICS/slider14.jpg" alt="Slide 4"></div>
-                <div class="slide"><img src="PICS/slider15.jpg" alt="Slide 5"></div>
-            </div>
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button>
-            <h1>Search For Property In Maharashtra</h1>
-            <button id="sale">For Sale</button>
-            <button id="rent">For Rent</button>
         </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>Find Your Dream Property</h2>
+            <p>Search thousands of properties for sale or rent</p>
+            <form action="#" method="get">
+                <input type="text" name="search" placeholder="Enter location, property type, or keyword">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
 
 
 
-
-
-        <!-- <div class="container1">
-            <h1>Search For Property In Maharashtra</h1>
-            <div class="sale">
-                <button>For Sale</button>
+    <section id="featured-properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="property-card">
+                <img src="PICS/home1.jpg" alt="Property 1">
+                <h3>Property Title</h3>
+                <p>Location</p>
+                <p>Price</p>
+                <a href="#">View Details</a>
             </div>
-            <div class="rent">
-                <button>For Rent</button>
+
+            <div class="property-card">
+                <img src="PICS/home2.jpg" alt="Property 1">
+                <h3>Property Title</h3>
+                <p>Location</p>
+                <p>Price</p>
+                <a href="#">View Details</a>
             </div>
-        </div> -->
+
+            <div class="property-card">
+                <img src="PICS/home3.avif" alt="Property 1">
+                <h3>Property Title</h3>
+                <p>Location</p>
+                <p>Price</p>
+                <a href="#">View Details</a>
+            </div>
+
+            <div class="property-card">
+                <img src="PICS/home4.jpg" alt="Property 1">
+                <h3>Property Title</h3>
+                <p>Location</p>
+                <p>Price</p>
+                <a href="#">View Details</a>
+            </div>
+
+            <div class="property-card">
+                <img src="PICS/home5.jpg" alt="Property 1">
+                <h3>Property Title</h3>
+                <p>Location</p>
+                <p>Price</p>
+                <a href="#">View Details</a>
+            </div>
+
+            <div class="property-card">
+                <img src="PICS/home6.jpg" alt="Property 1">
+                <h3>Property Title</h3>
+                <p>Location</p>
+                <p>Price</p>
+                <a href="#">View Details</a>
+            </div>
+            
+        </div>
+    </section>
 
 
-    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Real Estate Listings. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
 
 
-    <script>
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
-        const slides = document.querySelector('.slides');
-
-        let slideIndex = 0;
-
-        const showSlide = () => {
-            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
-        };
-
-        const nextSlide = () => {
-            slideIndex = (slideIndex + 1) % 5;
-            showSlide();
-        };
-
-        const prevSlide = () => {
-            slideIndex = (slideIndex - 1 + 5) % 5;
-            showSlide();
-        };
-
-        nextButton.addEventListener('click', nextSlide);
-        prevButton.addEventListener('click', prevSlide);
-    </script>
 </body>
 
 </html>
