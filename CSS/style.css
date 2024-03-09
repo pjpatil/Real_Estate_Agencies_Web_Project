@@ -5,21 +5,24 @@
     scroll-behavior: smooth;
 }
 
-/* Red: #FF0000    Silver: #C0C0C0  colour: #454545  */
-
 body {
     font-family: Arial, sans-serif;
 }
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
-header{
+/* Red: #FF0000    Silver: #C0C0C0  colour: #454545  */
+
+/* .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        } */
+
+/* Header Part */
+header {
     width: 100%;
-    position: fixed; 
-    background-color: #C0C0C0;     
+    height: 100px;
+    position: fixed;
+    background-color: #C0C0C0;
     color: #fff;
     padding: 0 0;
 }
@@ -30,41 +33,73 @@ header .container1 {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: safe;
 }
-header .container1 .logo img
-{
+
+header .container1 .logo img {
     width: 100%;
     height: 100px;
     background-repeat: no-repeat;
 }
 
+.logo img:hover {
+    background-color: #FF0000;
+}
 
 header nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #e9b2b2;
+    margin: 10px;
+    padding: 10px;
+    /* background-color: aquamarine; */
+
 }
 
 header nav ul li {
     display: inline;
     margin-right: 20px;
+    /* margin: 20px ; */
+    padding-left: 10px;
+    padding: 20px;
+    /* background-color:#454545; */
 }
 
 header nav ul li a {
+    /* padding-left: 10px; */
+    padding: 20px;
     text-decoration: none;
     color: #fff;
+    background-color: #454545;
 }
 
 header nav ul li a:hover {
     background-color: #FF0000;
 }
 
+header .container1 form {
+    margin-top: 30px;
+}
+
+header .container1 input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+header .container1 button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #454545;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .container1 button:hover {
+    background-color: #FF0000;
+}
 
 
 
+/* Hero Part */
 #hero {
     background: url("/PICS/Pune_Posh_area.png") center/cover no-repeat;
     color: #fff;
@@ -72,10 +107,12 @@ header nav ul li a:hover {
     padding: 250px 100px;
     text-align: center;
 }
-#hero .container {
+
+#hero .container2 {
     width: 80%;
-    margin: 10 auto;
+    margin: 0 auto;
     overflow: hidden;
+
 }
 
 #hero h2 {
@@ -87,20 +124,49 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-#hero form {
-    margin-top: 20px;
+#hero #sale,
+#hero #rent {
+    /* position: absolute; */
+    /* top: 50%; */
+    width: 120px;
+    height: 50px;
+    /* transform: translateY(-50%); */
+    /* border-radius: 5px; */
+    background-color: #454545;
+    color: #fff;
+    cursor: pointer;
 }
 
-#hero input[type="text"],
-#hero button {
-    padding: 10px;
-    font-size: 16px;
+#hero #sale {
+    /* left: 40%; */
 }
 
+#hero #rent {
+    /* right: 40%; */
+}
+
+#hero #sale:hover {
+    background-color: #FF0000;
+}
+
+#hero #rent:hover {
+    background-color: #FF0000;
+}
+
+
+
+
+/* Featured-Properties */
 #featured-properties {
     background: #C0C0C0;
     /* background: url("/PICS/some.jpg") center/cover no-repeat; */
     padding: 50px 0;
+}
+
+#featured-properties .container3 {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .property-card {
@@ -128,9 +194,46 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 
+/* Map-Menu Part */
+.map-menu {
+    background: #C0C0C0;
+    height: 600px;
+    background-image: url("/PICS/map1.jpg");
+    background-repeat: no-repeat;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+}
 
+.map-menu .container4 {
+    
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-image: url("/PICS/maharashtra-map-slide1-removebg-preview.png"); */
+    
+}
+
+/* footer  part */
 footer {
     background: #333;
     color: #fff;
     padding: 20px 0;
+}
+
+footer .container5 {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer .container5 form {
+    margin-top: 20px;
+}
+
+footer input[type="text"],
+footer button {
+    padding: 10px;
+    font-size: 16px;
 }
