@@ -217,22 +217,42 @@ header .container1 button:hover {
 
 /* footer  part */
 footer {
-    background: #333;
+    width: 100%;
+    height: 500px;
+    background:#454545;
     color: #fff;
-    padding: 20px 0;
+    padding: 50px 10px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
-
-footer .container5 {
-    width: 80%;
+.fcol
+{
+    width: 90%;
     margin: 0 auto;
-    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    
 }
 
-footer .container5 form {
-    margin-top: 20px;
+footer .fcol .container5 {
+
+    border: 1px solid black;
+    /* background: orange; */
 }
 
-footer input[type="text"],
+footer .fcol .container5 form {
+    margin-top: 30px;
+    background-color: orange;
+}
+
+footer input[type="email"],
 footer button {
     padding: 10px;
     font-size: 16px;
