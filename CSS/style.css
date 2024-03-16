@@ -9,9 +9,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+
 /* Red: #FF0000    Silver: #C0C0C0  colour: #454545  */
 
-/* .container {ss
+/* .container {
             width: 80%;
             margin: 0 auto;
             overflow: hidden;
@@ -22,7 +24,8 @@ header {
     width: 100%;
     height: 100px;
     position: fixed;
-    background-color: #C0C0C0;
+    background-color: #c6b0b0;
+    /* background-color: #333; */
     color: #fff;
     padding: 0 0;
 }
@@ -41,9 +44,10 @@ header .container1 .logo img {
     width: 100%;
     height: 100px;
     background-repeat: no-repeat;
+    /* background-color:#C0C0C0;    */
 }
 
-.logo img:hover {
+header .container1 .logo img:hover {
     background-color: #FF0000;
 }
 
@@ -69,8 +73,9 @@ header nav ul li a {
     padding: 20px;
     text-decoration: none;
     color: #fff;
+    /* background-color: #333; */
     background-color: #454545;
-    border-radius: 10%;
+    /* border-radius: 10%; */
 }
 
 header nav ul li a:hover {
@@ -98,7 +103,30 @@ header .container1 button:hover {
     background-color: #FF0000;
 }
 
+header .container1 .login {
+    height: 80px;
+    /* border: 1px solid black; */
+    /* padding: 20px; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #454545; */
+}
 
+header .container1 .login a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    /* border: 1px solid black; */
+    background-color: #454545;
+    /* border-radius: 10%; */
+}
+
+header .container1 .login a:hover {
+    background-color: #FF0000;
+
+}
 
 /*------------------------------------ Hero Part ----------------------------------------- */
 #hero {
@@ -117,11 +145,11 @@ header .container1 button:hover {
 }
 
 #hero h2 {
-    font-size: 36px;
+    font-size: 45px;
 }
 
 #hero p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -162,6 +190,7 @@ header .container1 button:hover {
     background: #C0C0C0;
     /* background: url("/PICS/some.jpg") center/cover no-repeat; */
     padding: 50px 0;
+    border: 2px solid black;
 }
 
 #featured-properties .container3 {
@@ -195,59 +224,157 @@ header .container1 button:hover {
     text-decoration: none;
 }
 
-/* -----------------------------------  Map-Menu Part -----------------------------------*/
-.map-menu {
-    background: #C0C0C0;
-    height: 600px;
-    background-image: url("/PICS/map1.jpg");
-    background-repeat: no-repeat;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-     */
+.property-card a:hover {
+    background-color: #FF0000;
+    /* border-radius: 10%; */
 }
 
-.map-menu .container4 {
+/* -----------------------------------  Map-Menu Part -----------------------------------*/
+#map-menu {
+    background: #C0C0C0;
+    border: 2px solid black;
+    padding: 50px 0;
+    /* height: 500px; */
+    /* background-image: url("/PICS/map1.jpg"); */
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+#map-menu .container4 {
 
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
-    /* background-image: url("/PICS/maharashtra-map-slide1-removebg-preview.png"); */
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+/* ----- card-map ------ */
+#map-menu .container4 .card-map {
+    background-color: beige;
+    width: 400px;
+    border: 1px solid black;
+}
+
+
+
+/* ------ map-table ------ */
+#map-menu .container4 .map-table {
+    /* background-color: white; */
+    border: 1px solid black;
+    width: 350px;
+    /* padding: 10px; */
+}
+
+#map-menu .container4 .map-table h2 {
+    font-size: 30px;
+    border: 1px solid #000;
+    background-color: #FF0000;
+    justify-content: center;
+}
+
+.map-table table {
+    border: 1px solid #000;
+    /* margin: 10px; */
+    width: 350px;
+    border-collapse: collapse;
+    color: white;
+    /* box-shadow: 10px 10px 5px gray; */
+}
+
+.map-table table tr,
+td,
+th {
+    border: 1px solid #000;
+}
+
+.map-table table td,
+th {
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c6b0b0;
+    /* color: white; */
+}
+
+table tr {
+    background-color: #454545;
+    /* color: white; */
+}
+
+table tr:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
+table tr:nth-child(odd) {
+    background-color: #333;
+    /* color: white; */
+}
+
+
 
 /* --------------------------------    footer  part -------------------------------------*/
 footer {
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     background: #454545;
     color: #fff;
     padding: 50px 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
 }
 
-.fcol {
+footer .fcol {
     width: 90%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 2px solid black;
+    /* background-color:black; */
 
 }
 
 footer .fcol .container5 {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    /* padding: 10px; */
+    border: 1px solid black;
+}
+
+footer .fcol .container5 ul {
+    list-style-type: none;
+    margin: 10px;
     padding: 10px;
-    /* background: orange; */
+    /* text-decoration: none; */
+    color: white;
+}
+
+footer .fcol .container5 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    /* padding: 10px; */
+}
+
+footer .fcol .container5 .social-links {
+    width: 100%;
+    /* border: 1px solid black; */
+    /* padding: 10px; */
 }
 
 footer .fcol .container5 form {
@@ -264,16 +391,30 @@ footer button {
 
 footer .fcol .container5 .social-links {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 footer .fcol .container5 .social-links a img {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     padding: 10px;
+    margin-left: 15px;
     background-color: #C0C0C0;
     border-radius: 20%;
 }
 
 footer .fcol .container5 .social-links a img:hover {
     background-color: #FF0000;
+}
+
+footer .fcol .rep {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -22,18 +22,21 @@
                     MAHARASHTRA REAL ESTATE REGULATORY AUTHORITY
                     ISO 9001:2024 CERTIFIED</marquee>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="sale.html">Sale</a></li>
                     <li><a href="rent.html">Rent</a></li>
                     <li><a href="#">Properties</a></li>
                     <li><a href="#">Agents</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
                 </ul>
             </nav>
             <form action="#" method="get">
                 <input type="text" name="search" placeholder="Enter location, property type, or keyword">
                 <button type="submit">Search</button>
             </form>
+            <div class="login">
+                <a href="loginform.html">Login</a>
+            </div>
         </div>
     </header>
 
@@ -43,8 +46,8 @@
         <div class="container2">
             <h2>Find Your Dream Property</h2>
             <p>Search thousands of properties for sale or rent</p>
-            <button id="sale">For Sale</button>
-            <button id="rent">For Rent</button>
+            <a href="sale.html"><button id="sale">For Sale</button></a>
+            <a href="rent.html"><button id="rent">For Rent</button></a>
         </div>
     </section>
 
@@ -104,16 +107,93 @@
         </div>
     </section>
 
+
     <!-- Map-Menu -->
-    <div class="map-menu">
+    <section id="map-menu">
         <div class="container4">
-            <h1>Maharashtra Map</h1>
+            <img src="PICS/IND_maharashtra_jalgaon.png" alt="">
+            <div class="card-map">
+                    <h3>jalgaon City</h3>
+                    <!-- <img src="PICS/Jalgaon_skyline.jpg" alt=""> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, beatae!</p>
+                    <a href="#">View Details</a>
+           
+            </div>
+
+            <div class="map-table">
+                <h2>Map of the Districts of Maharashtra</h2>
+                <table>
+                    <th>Districts</th>
+                    <th>Sales</th>
+                    <th>Rentals</th>
+
+                    <tr>
+                        <td>Dhule</td>
+                        <td>100</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td>Jalna</td>
+                        <td>90</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td>jalgaon</td>
+                        <td>120</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>Mumbai</td>
+                        <td>100</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td>Pune</td>
+                        <td>100</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td>Nashik</td>
+                        <td>100</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td>Pune</td>
+                        <td>200</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Raigad</td>
+                        <td>90</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Satara</td>
+                        <td>80</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Solapur</td>
+                        <td>110</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Thane</td>
+                        <td>150</td>
+                        <td>120</td>
+                    </tr>
+                </table>
+
+            </div>
+
 
         </div>
-    </div>
+    </section>
+
 
     <!-- Footer Part -->
     <footer>
+
         <div class="fcol">
             <div class="container5">
                 <h1>Company</h1>
@@ -137,14 +217,14 @@
             </div>
 
             <div class="container5">
-                <h2>Newsletter </h2>
+                <h1>Newsletter</h1>
                 <form action="#" method="get">
                     <input type="email" name="E-Mail" placeholder="Enter Your Mailid..">
                     <button type="submit">Subscribe</button>
                 </form>
-
                 <h3>Follow us</h3>
                 <div class="social-links">
+
                     <a href="#"><img src="PICS/icons/facebook logo2_icon.png" alt=""></a>
                     <a href="https://www.instagram.com/_heart_2001_hacker_/"><img src="PICS/icons/instagram1_icon.png"
                             alt=""> </a>
@@ -153,18 +233,20 @@
                     <a href="https://www.linkedin.com/in/pankaj-patil-322a20246/"><img
                             src="PICS/icons/linkedin3_icon.png" alt=""></a>
                 </div>
+
+
+
             </div>
 
         </div>
 
-
         <div class="fcol">
-            <p>&copy; 2024 Real Estate Listings. All rights reserved.</p>
-            <h4>1234567890</h4>
+            <div class="rep">
+                <p>&copy; 2024 Real Estate Listings. All rights reserved.</p>
+            </div>
         </div>
 
     </footer>
-
 
 </body>
 

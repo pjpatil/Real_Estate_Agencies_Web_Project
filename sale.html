@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+<style>
+    .container {
+        width: 50%;
+        height: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 150px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    } */
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="file"] {
+        margin-top: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
 <body>
-    <h1>No data found </h1>
-    <h2>errore</h2>
+
+    <!-- Header Part -->
+    <header>
+        <div class="container1">
+            <div class="logo">
+                <img src="PICS/logo/RE_Logo00.png" alt="">
+            </div>
+
+            <nav>
+                <marquee behavior="lang" direction="">
+                    MAHARASHTRA REAL ESTATE REGULATORY AUTHORITY
+                    ISO 9001:2024 CERTIFIED</marquee>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </nav>
+            <form action="#" method="get">
+                <input type="text" name="search" placeholder="Enter location, property type, or keyword">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <!-- form sale -->
+    <div class="container">
+        <h2>Property Sale</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="property-img">Upload Image:</label>
+                <input type="file" id="property-img" name="property-img" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="property-info">Property Information:</label>
+                <textarea id="property-info" name="property-info" rows="5"
+                    placeholder="Enter property information"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contact-name">Contact Name:</label>
+                <input type="text" id="contact-name" name="contact-name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="contact-location">Location:</label>
+                <input type="text" id="contact-location" name="contact-location" placeholder="Enter property location">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+    <!-- Footer Part -->
+    <footer>
+        <div class="fcol">
+            <div class="container5">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">about product</a></li>
+                </ul>
+
+            </div>
+            <div class="container5">
+                <h1>Quick Links </h1>
+                <ul>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">Outside Maharashtra</a></li>
+                    <li><a href="#">Real Estate Agencies</a></li>
+
+                </ul>
+            </div>
+
+            <div class="container5">
+                <h1>Newsletter</h1>
+                <form action="#" method="get">
+                    <input type="email" name="E-Mail" placeholder="Enter Your Mailid..">
+                    <button type="submit">Subscribe</button>
+                </form>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="fcol">
+            <div class="rep">
+                <p>&copy; 2024 Real Estate Listings. All rights reserved.</p>
+            </div>
+
+            <div class="social-links">
+                <!-- <h3>Follow us</h3> -->
+                <a href="#"><img src="PICS/icons/facebook logo2_icon.png" alt=""></a>
+                <a href="https://www.instagram.com/_heart_2001_hacker_/"><img src="PICS/icons/instagram1_icon.png"
+                        alt=""> </a>
+                <a href="#"><img src="PICS/icons/twitter_icon4.png" alt=""> </a>
+                <a href="https://github.com/pjpatil"><img src="PICS/icons/github3_icon.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/pankaj-patil-322a20246/"><img src="PICS/icons/linkedin3_icon.png"
+                        alt=""></a>
+            </div>
+        </div>
+
+    </footer>
+
+
 </body>
+
 </html>
