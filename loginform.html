@@ -6,6 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Website</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/loginform.css">
+    <style>
+        #login {
+            background-image: url(PICS/Sliders/slider8.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 250px 100px;
+            text-align: center;
+
+        }
+
+        #login .container2 {
+            width: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #login .container2 h1 {
+            font-size: 3rem;
+            color: #000;
+            text-align: center;
+        }
+
+        #login .container2 .inputbox {
+            margin: 30px 0;
+            max-width: 310px;
+            border-bottom: 2px solid #fff;
+        }
+
+        #login .container2 .inputbox label {
+            
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 1rem;
+            pointer-events: none;
+            transition: all 0.5s ease-in-out;
+        }
+
+        input:focus~label,
+        input:focus~label {
+            top: -5px
+        }
+
+        .inputbox input {
+            width: 100%;
+            height: 60px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            padding: 0 35px 0 5px;
+            color: #fff;
+        }
+
+        .inputbox ion-icon {
+            position: absolute;
+            right: 8px;
+            color: #fff;
+            font-size: 1.2rem;
+            top: 20px;
+        }
+
+        #login .container2 .forget {
+            margin: 35px 0;
+            font-size: 0.85rem;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #login .container2 .forget label {
+            display: flex;
+            align-items: center;
+        }
+
+        #login .container2 .forget label input {
+            margin-right: 3px;
+        }
+
+        #login .container2 .forget a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .forget a:hover {
+            text-decoration: underline;
+        }
+
+        #login .container2 button {
+            width: 100%;
+            height: 40px;
+            border-radius: 40px;
+            background-color: rgb(255, 255, 255, 1);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.4s ease;
+        }
+
+        button:hover {
+            background-color: rgb(255, 255, 255, 0.5);
+        }
+
+        .register {
+            font-size: 0.9rem;
+            color: #fff;
+            text-align: center;
+            margin: 25px 0 10px;
+        }
+
+        .register p a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .register p a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,89 +171,40 @@
     </header>
 
 
-    <!-- Hero Part -->
-    <section id="hero">
+    <!-- Login-Section -->
+    <section id="login">
         <div class="container2">
-            <h2>Find Your Dream Property</h2>
-            <p>Search thousands of properties for sale or rent</p>
-            <a href="sale.html"><button id="sale">For Sale</button></a>
-            <a href="rent.html"><button id="rent">For Rent</button></a>
-        </div>
-    </section>
+            <form>
+                <h1>Login</h1>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
 
-
-    <!-- Featured-Properties -->
-    <section id="featured-properties">
-        <div class="container3">
-            <h2>Featured Properties</h2>
-            <div class="property-card">
-                <img src="PICS/Homes/home1.jpg" alt="Property 1">
-                <h3>3 PIECES PROCHES LES</h3>
-                <p>Location : Pune</p>
-                <p>Price : 5,00,000</p>
-                <a href="#">View Details</a>
-            </div>
-
-            <div class="property-card">
-                <img src="PICS/Homes/home2.jpg" alt="Property 1">
-                <h3>3 PIECES PROCHES LES</h3>
-                <p>Location : Pune</p>
-                <p>Price : 3,00,000</p>
-                <a href="#">View Details</a>
-            </div>
-
-            <div class="property-card">
-                <img src="PICS/Homes/home3.avif" alt="Property 1">
-                <h3>3 PIECES PROCHES LES</h3>
-                <p>Location : Pune</p>
-                <p>Price : 4,00,000</p>
-                <a href="#">View Details</a>
-            </div>
-
-            <div class="property-card">
-                <img src="PICS/Homes/home4.jpg" alt="Property 1">
-                <h3>Property Title</h3>
-                <p>Location</p>
-                <p>Price</p>
-                <a href="#">View Details</a>
-            </div>
-
-            <div class="property-card">
-                <img src="PICS/Homes/home5.jpg" alt="Property 1">
-                <h3>Property Title</h3>
-                <p>Location</p>
-                <p>Price</p>
-                <a href="#">View Details</a>
-            </div>
-
-            <div class="property-card">
-                <img src="PICS/Homes/home6.jpg" alt="Property 1">
-                <h3>Property Title</h3>
-                <p>Location</p>
-                <p>Price</p>
-                <a href="#">View Details</a>
-            </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Remember Me</label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button> Log in</button>
+                <div class="register">
+                    <p>Dont's have a account <a href="#">register</a></p>
+                </div>
+            </form>
 
         </div>
     </section>
 
-   <!-- Map-Menu -->
-    <section id="map">
-        <div class="container2">
-            <h1>Maharashtra Map</h1>
-        </div>
-    </section>
- 
-    <div class="map-menu">
-        <div class="container4">
-            <h1>Maharashtra Map</h1>
 
-        </div>
-    </div>
+
 
     <!-- Footer Part -->
     <footer>
-
         <div class="fcol">
             <div class="container5">
                 <h1>Company</h1>
@@ -163,8 +244,6 @@
                     <a href="https://www.linkedin.com/in/pankaj-patil-322a20246/"><img
                             src="PICS/icons/linkedin3_icon.png" alt=""></a>
                 </div>
-
-
 
             </div>
 

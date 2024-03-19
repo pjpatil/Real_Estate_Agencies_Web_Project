@@ -11,7 +11,7 @@ body {
 
 
 
-/* Red: #FF0000    Silver: #C0C0C0  colour: #454545  */
+/* Red: #FF0000  || Silver: #C0C0C0 || colour: #454545  ||  colour: #333 */
 
 /* .container {
             width: 80%;
@@ -190,13 +190,19 @@ header .container1 .login a:hover {
     background: #C0C0C0;
     /* background: url("/PICS/some.jpg") center/cover no-repeat; */
     padding: 50px 0;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #featured-properties .container3 {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+}
+#featured-properties .container3 h2
+{
+    padding-left:400px;
+    font-size: 40px;
+    /* font-weight: 40px; */
 }
 
 .property-card {
@@ -232,15 +238,18 @@ header .container1 .login a:hover {
 /* -----------------------------------  Map-Menu Part -----------------------------------*/
 #map-menu {
     background: #C0C0C0;
-    border: 2px solid black;
+    font-weight: bold;
+    /* border: 2px solid black; */
     padding: 50px 0;
-    /* height: 500px; */
-    /* background-image: url("/PICS/map1.jpg"); */
-    background-repeat: no-repeat;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
 
+}
+#map-menu h1
+{
+    font-size: 50px;
+    
 }
 
 #map-menu .container4 {
@@ -251,39 +260,74 @@ header .container1 .login a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
     align-items: center;
 }
-/* ----- card-map ------ */
+
+/* --------------------- card-map -------------------------- */
 #map-menu .container4 .card-map {
-    background-color: beige;
-    width: 400px;
-    border: 1px solid black;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+#map-menu .container4 .card-map h3 {
+    padding: 10px;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+
+#map-menu .container4 .card-map img {
+    width: 300px;
+    object-fit: fill;
+}
+
+#map-menu .container4 .card-map p {
+    padding: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+#map-menu .container4 .card-map a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#map-menu .container4 .card-map a:hover {
+    background-color: #FF0000;
+}
 
 
 /* ------ map-table ------ */
 #map-menu .container4 .map-table {
-    /* background-color: white; */
-    border: 1px solid black;
+    background-color: #454545;
+    /* border: 1px solid black; */
     width: 350px;
-    /* padding: 10px; */
+    align-items: center;
 }
 
 #map-menu .container4 .map-table h2 {
+    height: 100px;
     font-size: 30px;
-    border: 1px solid #000;
+    padding: 10px;
+    /* border: 1px solid #000; */
+    /* clip-path: polygon(100% 0, 0 0, 47% 100%); */
     background-color: #FF0000;
-    justify-content: center;
 }
 
 .map-table table {
-    border: 1px solid #000;
-    /* margin: 10px; */
+    /* border: 1px solid #000; */
     width: 350px;
     border-collapse: collapse;
     color: white;
-    /* box-shadow: 10px 10px 5px gray; */
 }
 
 .map-table table tr,
@@ -344,7 +388,7 @@ footer .fcol {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* background-color:black; */
 
 }
@@ -353,7 +397,7 @@ footer .fcol .container5 {
     display: flex;
     flex-direction: column;
     /* padding: 10px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 footer .fcol .container5 ul {
@@ -369,6 +413,16 @@ footer .fcol .container5 ul li a {
     color: white;
     font-size: 18px;
     /* padding: 10px; */
+}
+footer .fcol .container5 button
+{
+    background-color:#333;
+    color: #FF0000;
+}
+footer .fcol .container5 button:hover
+{
+    background-color: #FF0000;
+    color: white;
 }
 
 footer .fcol .container5 .social-links {
